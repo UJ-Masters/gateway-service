@@ -14,11 +14,11 @@ spring:
       routes:
         - id: otpModule
           #uri: http://localhost:8081/
-          uri: http://otp-ds-myproject.192.168.99.101.nip.io/
+          uri: http://otp-ds-myproject.192.168.99.103.nip.io/
           predicates:
             - Path=/otp/**
         - id: communicationModule
-          uri: http://communication-ds-myproject.192.168.99.101.nip.io/
+          uri: http://communication-ds-myproject.192.168.99.103.nip.io/
           #uri: http://localhost:8082/
           predicates:
             - Path=/communication/**
@@ -42,7 +42,7 @@ spring:
     oauth2:
       resource-server:
         jwt:
-          issuer-uri: http://auth-ds-myproject.192.168.99.101.nip.io/auth/realms/uj
+          issuer-uri: http://auth-ds-myproject.192.168.99.103.nip.io/auth/realms/uj
           #issuer-uri: http://localhost:8083/auth/realms/uj
           #jwk-set-uri: http://localhost:8083/auth/realms/uj/protocol/openid-connect/certs
-          jwk-set-uri: http://auth-ds-myproject.192.168.99.101.nip.io/auth/realms/uj/protocol/openid-connect/certs
+          jwk-set-uri: http://auth-ds-myproject.192.168.99.103.nip.io/auth/realms/uj/protocol/openid-connect/certs
